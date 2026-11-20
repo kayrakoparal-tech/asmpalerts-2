@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "asmpalerts",
+  "version": "${version}",
+  "name": "ASMP Dramatic Alerts",
+  "description": "AesirSmp için kademeli (1M / 10M / 100M / 1B / 10B+) bağış ve transfer ekran efektleri.",
+  "authors": [
+    "AesirSmp"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.asmp.dramaticalerts.AsmpAlertsClient"
+    ]
+  },
+  "mixins": [
+    "asmpalerts.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.8",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
